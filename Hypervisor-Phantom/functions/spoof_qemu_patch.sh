@@ -292,6 +292,7 @@ compile_qemu() {
   ./configure --target-list=x86_64-softmmu \
               --enable-libusb \
               --enable-spice \
+              --enable-slirp \
               --disable-werror &>> "$LOG_FILE"
 
   fmtr::log "Building QEMU"
